@@ -1,0 +1,148 @@
+/* // @import '../../global.scss'; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* h1,h2,h3,h4{
+  color: black;
+  font-weight: 600;
+} */
+
+/* ul{
+  list-style: none;
+} */
+
+/* a{
+  text-decoration: none;
+} */
+
+.about_img{
+  width: 100%;
+  height: auto;
+
+}
+
+.about_img{
+width: 350px;
+border-radius: 1.43rem;
+justify-self: center;
+align-items: center;
+}
+
+.about{
+background-color: white;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.section_title{
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.section_title {
+  font-size: 2.25rem;
+}
+.section_subtitle-about{
+  color: rgb(53, 64, 122);
+  text-align: center;
+  margin-bottom: 3rem;
+  display: block;
+  font-size: 0.875rem;
+}
+
+
+.grid{
+  display: grid;
+  gap: 1.5rem;
+}
+
+.about_container{
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+.about_description {
+  color: rgb(53, 64, 122);
+  font-family: 'Poppins', sans-serif;
+  text-align: initial;
+  margin-bottom: 1.5rem;
+}
+
+.about_info {
+
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+.about_info-title, .about_info-name {
+  font-family: 'Poppins', sans-serif;
+  display: block;
+  text-align: center;
+}
+.about_info-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.about_info-name {
+  color: hsl( 230 , 8%, 45%);
+  font-size: 0.75rem;
+}
+.about_buttons {
+  justify-content: initial;
+  display: flex;
+}
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+.button {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  background-color: crimson;
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: 500;
+}
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 450px) {
+
+.about > .section_title{
+  font-size: 1.5rem;
+}
+.section_subtitle-about{
+  font-size: 0.813rem;
+  margin-bottom: 2rem;
+}
+.about_container{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  column-gap: 1.5rem;
+  grid-template-columns: none;
+}
+.about_img{
+  width: 200px;
+}
+.about_description{
+  text-align: center;
+}
+.about_buttons{
+  justify-content: center;
+}
+.button--flex{
+  display: inline-flex;
+}
+
+}
